@@ -1,0 +1,298 @@
+shyam@Shyam_PC MINGW64 ~/Downloads
+$ mkdir my-project
+
+shyam@Shyam_PC MINGW64 ~/Downloads
+$ cd my-project
+
+shyam@Shyam_PC MINGW64 ~/Downloads/my-project
+$ touch script1.sh script2.sh
+
+shyam@Shyam_PC MINGW64 ~/Downloads/my-project
+$ echo -e "#!/bin/bash\necho 'Hello from script1'" > script1.sh
+echo -e "#!/bin/bash\necho 'Hello from script2'" > script2.sh
+bash: !/bin/bash\necho: event not found
+bash: !/bin/bash\necho: event not found
+
+shyam@Shyam_PC MINGW64 ~/Downloads/my-project
+$ echo -e "#!/bin/bash\necho 'Hello from script1'" > script1.sh
+bash: !/bin/bash\necho: event not found
+
+shyam@Shyam_PC MINGW64 ~/Downloads/my-project
+$ echo -e "#!/bin/bash\necho 'Hello from script1'" > script1.sh
+echo -e "#!/bin/bash\necho 'Hello from script2'" > script2.sh
+bash: !/bin/bash\necho: event not found
+bash: !/bin/bash\necho: event not found
+
+shyam@Shyam_PC MINGW64 ~/Downloads/my-project
+$ ^C
+
+shyam@Shyam_PC MINGW64 ~/Downloads/my-project
+$ echo '#!/bin/bash
+echo "Hello from script1"' > script1.sh
+
+echo '#!/bin/bash
+echo "Hello from script2"' > script2.sh
+
+shyam@Shyam_PC MINGW64 ~/Downloads/my-project
+$ set +H
+
+shyam@Shyam_PC MINGW64 ~/Downloads/my-project
+$ echo -e "#!/bin/bash\necho 'Hello from script1'" > script1.sh
+
+shyam@Shyam_PC MINGW64 ~/Downloads/my-project
+$ chmod +x script1.sh script2.sh
+
+shyam@Shyam_PC MINGW64 ~/Downloads/my-project
+$ ./script1.sh
+./script2.sh
+Hello from script1
+Hello from script2
+
+shyam@Shyam_PC MINGW64 ~/Downloads/my-project
+$ git init
+git add .
+git commit -m "Initial commit with two scripts"
+Initialized empty Git repository in C:/Users/shyam/Downloads/my-project/.git/
+warning: in the working copy of 'script1.sh', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'script2.sh', LF will be replaced by CRLF the next time Git touches it
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'shyam@Shyam_PC.(none)')
+
+shyam@Shyam_PC MINGW64 ~/Downloads/my-project (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/shyam/Downloads/my-project/.git/
+
+shyam@Shyam_PC MINGW64 ~/Downloads/my-project (master)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+shyam@Shyam_PC MINGW64 ~/Downloads/my-project (master)
+$ ^C
+
+shyam@Shyam_PC MINGW64 ~/Downloads/my-project (master)
+$ git commit -m "Initial commit with two scripts"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'shyam@Shyam_PC.(none)')
+
+shyam@Shyam_PC MINGW64 ~/Downloads/my-project (master)
+$ shyam@Shyam_PC MINGW64 ~/Downloads/my-project (master)
+$ git commit -m "Initial commit with two scripts"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'shyam@Shyam_PC.(none)')
+
+shyam@Shyam_PC MINGW64 ~/Downloads/my-project (master)
+*** Please tell me who you are.
+bash: syntax error near unexpected token `('
+bash: $: command not found
+bash: Author: command not found
+bash: script1.sh: command not found
+bash: Run: command not found
+bash: syntax error near unexpected token `('
+bash: syntax error near unexpected token `('
+bash: script1.sh: command not found
+
+shyam@Shyam_PC MINGW64 ~/Downloads/my-project (master)
+$ git config --global user.name "ShyamKumaran30"
+git config --global user.email "shyamgjk@gmail.com"
+
+shyam@Shyam_PC MINGW64 ~/Downloads/my-project (master)
+$ git commit -m "Initial commit with two scripts"
+[master (root-commit) b93cf4a] Initial commit with two scripts
+ 2 files changed, 4 insertions(+)
+ create mode 100644 script1.sh
+ create mode 100644 script2.sh
+
+shyam@Shyam_PC MINGW64 ~/Downloads/my-project (master)
+$ git remote add origin https://github.com/ShyamKumaran30/My-project-Github-1.git
+
+shyam@Shyam_PC MINGW64 ~/Downloads/my-project (master)
+$ git branch -M main
+
+shyam@Shyam_PC MINGW64 ~/Downloads/my-project (main)
+$ git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 344 bytes | 344.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/ShyamKumaran30/My-project-Github-1.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+shyam@Shyam_PC MINGW64 ~/Downloads/my-project (main)
+$ git checkout -b feature-hello
+Switched to a new branch 'feature-hello'
+
+shyam@Shyam_PC MINGW64 ~/Downloads/my-project (feature-hello)
+$ echo 'echo "This is a new feature!"' >> script1.sh
+
+shyam@Shyam_PC MINGW64 ~/Downloads/my-project (feature-hello)
+$ git add script1.sh
+git commit -m "Added a new feature message to script1"
+warning: in the working copy of 'script1.sh', LF will be replaced by CRLF the next time Git touches it
+[feature-hello 0968f7d] Added a new feature message to script1
+ 1 file changed, 1 insertion(+)
+
+shyam@Shyam_PC MINGW64 ~/Downloads/my-project (feature-hello)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+shyam@Shyam_PC MINGW64 ~/Downloads/my-project (main)
+$ git merge feature-hello
+Updating b93cf4a..0968f7d
+Fast-forward
+ script1.sh | 1 +
+ 1 file changed, 1 insertion(+)
+
+shyam@Shyam_PC MINGW64 ~/Downloads/my-project (main)
+$ git checkout -b feature-goodbye
+Switched to a new branch 'feature-goodbye'
+
+shyam@Shyam_PC MINGW64 ~/Downloads/my-project (feature-goodbye)
+$ echo 'echo "Goodbye from feature branch!"' >> script2.sh
+
+shyam@Shyam_PC MINGW64 ~/Downloads/my-project (feature-goodbye)
+$ git add script2.sh
+git commit -m "Add goodbye message to script2"
+warning: in the working copy of 'script2.sh', LF will be replaced by CRLF the next time Git touches it
+[feature-goodbye b030ac5] Add goodbye message to script2
+ 1 file changed, 1 insertion(+)
+
+shyam@Shyam_PC MINGW64 ~/Downloads/my-project (feature-goodbye)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+shyam@Shyam_PC MINGW64 ~/Downloads/my-project (main)
+$ ^[[200~git checkout -b temp-main ~
+bash: $'\E[200~git': command not found
+
+shyam@Shyam_PC MINGW64 ~/Downloads/my-project (main)
+$ git checkout -b temp-main
+Switched to a new branch 'temp-main'
+
+shyam@Shyam_PC MINGW64 ~/Downloads/my-project (temp-main)
+$ git rebase feature-goodbye
+Successfully rebased and updated refs/heads/temp-main.
+
+shyam@Shyam_PC MINGW64 ~/Downloads/my-project (temp-main)
+$ ls
+script1.sh*  script2.sh*
+
+shyam@Shyam_PC MINGW64 ~/Downloads/my-project (temp-main)
+$ echo 'echo "Temporary work in progress"' >> script1.sh
+
+shyam@Shyam_PC MINGW64 ~/Downloads/my-project (temp-main)
+$ git stash
+warning: in the working copy of 'script1.sh', LF will be replaced by CRLF the next time Git touches it
+Saved working directory and index state WIP on temp-main: b030ac5 Add goodbye message to script2
+
+shyam@Shyam_PC MINGW64 ~/Downloads/my-project (temp-main)
+$ git stash pop
+On branch temp-main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   script1.sh
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Dropped refs/stash@{0} (4b78af6c4c269a55a07812030c4bacb92ca83fcb)
+
+shyam@Shyam_PC MINGW64 ~/Downloads/my-project (temp-main)
+$ ^C
+
+shyam@Shyam_PC MINGW64 ~/Downloads/my-project (temp-main)
+$ git config --global core.autocrlf true
+
+shyam@Shyam_PC MINGW64 ~/Downloads/my-project (temp-main)
+$ git add script1.sh
+
+shyam@Shyam_PC MINGW64 ~/Downloads/my-project (temp-main)
+$ git commit -m "Restore and commit stashed changes in script1"
+[temp-main a443c76] Restore and commit stashed changes in script1
+ 1 file changed, 1 insertion(+)
+
+shyam@Shyam_PC MINGW64 ~/Downloads/my-project (temp-main)
+$ git push -u origin temp-main
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 975 bytes | 975.00 KiB/s, done.
+Total 9 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), done.
+remote:
+remote: Create a pull request for 'temp-main' on GitHub by visiting:
+remote:      https://github.com/ShyamKumaran30/My-project-Github-1/pull/new/temp-main
+remote:
+To https://github.com/ShyamKumaran30/My-project-Github-1.git
+ * [new branch]      temp-main -> temp-main
+branch 'temp-main' set up to track 'origin/temp-main'.
+
+shyam@Shyam_PC MINGW64 ~/Downloads/my-project (temp-main)
+$ git checkout main
+git merge temp-main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+Updating 0968f7d..a443c76
+Fast-forward
+ script1.sh | 1 +
+ script2.sh | 1 +
+ 2 files changed, 2 insertions(+)
+
+shyam@Shyam_PC MINGW64 ~/Downloads/my-project (main)
+$ git push origin main
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/ShyamKumaran30/My-project-Github-1.git
+   b93cf4a..a443c76  main -> main
+
+shyam@Shyam_PC MINGW64 ~/Downloads/my-project (main)
+$ git branch -d temp-main
+Deleted branch temp-main (was a443c76).
+
+shyam@Shyam_PC MINGW64 ~/Downloads/my-project (main)
+$ git branch -d feature-hello
+git branch -d feature-goodbye
+Deleted branch feature-hello (was 0968f7d).
+Deleted branch feature-goodbye (was b030ac5).
